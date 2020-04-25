@@ -12,7 +12,7 @@ let package = Package(
             targets: ["Static"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-argument-parser", .upToNextMinor(from: "0.0.4")),
+//        .package(url: "https://github.com/apple/swift-argument-parser", .upToNextMinor(from: "0.0.4")),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -20,7 +20,7 @@ let package = Package(
         .target(
             name: "Static",
             dependencies: [
-				.product(name: "ArgumentParser", package: "swift-argument-parser")
+//				.product(name: "ArgumentParser", package: "swift-argument-parser")
 			]),
         .testTarget(
             name: "StaticTests",
